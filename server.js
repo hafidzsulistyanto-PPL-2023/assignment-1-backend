@@ -6,7 +6,7 @@ require('dotenv').config()
 const routes = require('./routes/userRoute')
 
 const app = express()
-const PORT = process.env.PORT | 5000
+const PORT = process.env.PORT || 5000
 
 app.use(express.json())
 app.use(cors())
